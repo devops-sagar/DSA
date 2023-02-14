@@ -6,4 +6,3 @@ class Solution:
                 return [items[target - value], index]
             else:
                 items[value] = index
-#adkjg;dfg
