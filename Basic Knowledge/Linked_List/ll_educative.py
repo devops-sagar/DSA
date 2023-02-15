@@ -1,6 +1,7 @@
 ''' ************************************************************************
 Most basic implementation of linkedlist with adding elements back at each other where here 3 will be the head since we added the number 3 first
 and number 5 would not be the tail always as if new number might be added and that will become the tail of the linked list.
+source: https://www.educative.io/answers/how-to-create-a-linked-list-in-python
 ************************************************************************'''
 
 class Node:
