@@ -15,7 +15,8 @@ class LinkedList:
 
     def insert(self, data):
         newNode = Node(data)
-
+        
+        print(bool(self.head))
         if self.head:
             current = self.head
 
