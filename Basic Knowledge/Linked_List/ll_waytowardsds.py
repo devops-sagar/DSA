@@ -1,32 +1,40 @@
 ''' ************************************************************************
-
+Most basic implementation of linkedlist with adding elements back at each other where here 3 will be the head since we added the number 3 first
+and number 5 would not be the tail always as if new number might be added and that will become the tail of the linked list.
 ************************************************************************'''
 
 class Node:
-    def __init__(self, value, next_node = None, prev_node = None):
-        self.value = value
-        self.next = next_node
-        self.prev = prev_node
+    def __init__(self, data = None, next = None):
+        self.data = data
+        self.next = next
 
 class LinkedList:
-    def __init__(self, values = None):
+    def __init__(self):
         self.head = None
-        self.tail = None
 
-        if values is not None:
-            self.add_multiple_nodes(values)
-    
-    def add_node(self, value):
-        if self.head is None:
-            self.tail = self.head = Node(value)
+    def insert(self, data):
+        newNode = Node(data)
+
+        if self.head:
+            current = self.head
+
+            while current.next:
+                current = current.next
+            
+            current.next = newNode
         else:
-            self.tail.next = Node(value)
-            self.tail = self.tail.next
-        return self.tail
+            self.head = newNode
     
-    def add_multiple_nodes(self, values):
-        for value in values:
-            self.add_node(value)
+    def printLL(self):
+        current = self.head
+        i = 1
+        while current:
+            print(f"Node {i}: ", current.data)
+            current = current.next
+            i += 1
 
-obj = LinkedList()
-obj.add_node(33)
+LL = LinkedList()
+LL.insert(3)
+LL.insert(4)
+LL.insert(5)
+LL.printLL()
