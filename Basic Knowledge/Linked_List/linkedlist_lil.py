@@ -1,3 +1,9 @@
+
+''' ************************************************************************
+This is the most basic way to implement the LinkedList in which Script will add the elements 5, 10, 15, 20 on top of each other. At the end of the 
+program 20 will be the Head node and 5 will be the tail node
+************************************************************************'''
+
 class Node(object):
     def __init__(self, value):
         self.value = value
