@@ -23,9 +23,11 @@ class LinkedList(object):
 
     def dump(self):
         temp = self.head
+        i = 1
         while(temp != None):
-            print("Node: ", temp.get_data())
+            print(f"Node {i}: ", temp.get_data())
             temp = temp.get_next()
+            i += 1
 
 obj = LinkedList()
 obj.insert(5)
