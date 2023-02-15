@@ -1,7 +1,7 @@
 # This repo is dedicated specially for the data structure and algorithm related questions
 ## you can find all the problems related to the questions appearing on Leetcode, Hackerank, Codechef
 
-## Folow this syntax to modify the Markdown files
+## Follow this syntax to modify the Markdown files
 <img width="609" alt="notejoy_highlight_markdown" src="https://user-images.githubusercontent.com/54584388/219150697-f57772e7-6802-49e1-8cad-bd57d8cef7b4.png">
 
 ## Checkout the official websites to know more about the markdown files and syntax here
