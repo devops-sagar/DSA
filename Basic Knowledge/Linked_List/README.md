@@ -38,7 +38,7 @@ Deletion is also expensive with arrays until unless some special techniques are 
 
 ## Time Complexity
 | Time Complexity | Worst Case | Average Case |
-|-----------------|------------|--------------|
+|:---------------:|:----------:|:------------:|
 | Search          | O(n)       | O(n)         |
 | Insertion       | O(1)       | O(1)         |
 | Deletion        | O(1)       | O(1)         |
