@@ -37,8 +37,7 @@ Deletion is also expensive with arrays until unless some special techniques are 
 - **Header Linked List** – A header linked list is a special type of linked list that contains a header node at the beginning of the list. 
 
 ## Time Complexity
-
-:| Time Complexity | Worst Case | Average Case |:
+| Time Complexity | Worst Case | Average Case |
 |:---------------:|:----------:|:------------:|
 | Search          | O(n)       | O(n)         |
 | Insertion       | O(1)       | O(1)         |
