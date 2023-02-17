@@ -49,7 +49,7 @@ Output
     []
 
 ### Implementation using collections.deque:
-Python stack can be implemented using the deque class from the collections module. Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to list which provides O(n) time complexity. 
+Python stack can be implemented using the deque class from the collections module. Deque is preferred over the list in the cases where we need quicker append and pop operations from both the ends of the container, as deque provides an O(1) time complexity for append and pop operations as compared to ::list which provides O(n) time complexity.:: 
 
 ```
 from collections import deque
@@ -147,7 +147,7 @@ Output
 ## Advantages of Stack:
 
 - Stacks are simple data structures with a well-defined set of operations, which makes them easy to understand and use.
-- _Stacks are efficient for adding and removing elements, as these operations have a time complexity of O(1)._
+- __Stacks are efficient for adding and removing elements, as these operations have a time complexity of O(1).__
 - In order to reverse the order of elements we use the stack data structure.
 - Stacks can be used to implement undo/redo functions in applications.
 
@@ -155,4 +155,4 @@ Output
 
 - Restriction of size in Stack is a drawback and if they are full, you cannot add any more elements to the stack.
 - Stacks do not provide fast access to elements other than the top element.
-- _Stacks do not support efficient searching, as you have to pop elements one by one until you find the element you are looking for._
+- __Stacks do not support efficient searching, as you have to pop elements one by one until you find the element you are looking for.__
