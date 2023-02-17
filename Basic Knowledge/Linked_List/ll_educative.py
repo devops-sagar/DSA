@@ -15,7 +15,7 @@ class LinkedList:
 
     def insert(self, data):
         newNode = Node(data)
-        
+        # print("type of None is: ", bool(None))
         print(bool(self.head))
         if self.head:
             current = self.head

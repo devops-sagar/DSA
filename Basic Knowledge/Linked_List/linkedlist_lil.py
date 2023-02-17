@@ -106,7 +106,6 @@ class LinkedList(object):
             node.set_next(node.get_next().get_next())
             self.count -= 1
 
-
     def dump(self):
         temp = self.head
         i = 0
