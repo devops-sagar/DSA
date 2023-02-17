@@ -85,9 +85,13 @@ class LinkedList(object):
         item = self.head
         while(item != None):
             if(item.get_data() == value):
-                return item
+                print(f"{item.get_data()} found at memory location: {item}")
+                # break
+                return None
             else:
                 item = item.get_next()
+                if item == None:
+                    print(f"{value} is not available in linked list")
         return None
 
     def dump(self):
@@ -107,4 +111,5 @@ obj.insert(20)
 obj.dump()
 
 print("Totoal Number of Nodes: ", obj.get_count())  #showing total count
-print("Found item at: ", obj.find(10))
+obj.find(10)              #finding item in nodes
+obj.find(-5)              #finding item in nodes
