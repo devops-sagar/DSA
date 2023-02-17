@@ -1,5 +1,6 @@
 
 ''' ************************************************************************
+Start of simple Implementation - just to show how to make nodes
 This is the most basic way to implement the LinkedList in which Script will add the elements 5, 10, 15, 20 on top of each other. At the end of the 
 program 20 will be the Head node and 5 will be the tail node
 ************************************************************************'''
@@ -42,3 +43,11 @@ obj.insert(15)
 obj.insert(20)
 
 obj.dump()
+
+
+''' ************************************************************************
+end of simple Implementation - just to show how to make nodes
+below you will see different operations on the linkedlist like counting nodes, searching elements in the nodes
+and deletion of specific nodes. These all can implemtnt on the existing codebase develop for making nodes and 
+assigning some values to it which is given above
+************************************************************************'''
