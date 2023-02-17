@@ -93,23 +93,54 @@ class LinkedList(object):
                 if item == None:
                     print(f"{value} is not available in linked list")
         return None
+    
+    def delete(self, index):            # Function to remove the element from the linkedlist - basically we are skipping the element in the list
+        if index > self.count or self.head == None:
+            return
+        else:
+            temp_index = 0
+            node = self.head
+            while (temp_index < index - 1):
+                node = node.get_next()
+                temp_index += 1
+            node.set_next(node.get_next().get_next())
+            self.count -= 1
+
 
     def dump(self):
         temp = self.head
-        i = 1
+        i = 0
         while(temp != None):
             print(f"Node {i}: ", temp.get_data())
             temp = temp.get_next()
             i += 1
 
 obj = LinkedList()
-obj.insert(5)
+
 obj.insert(10)
-obj.insert(15)
-obj.insert(20)
+obj.insert(9)
+obj.insert(8)
+obj.insert(7)
+obj.insert(6)
+obj.insert(5)
+obj.insert(4)
+obj.insert(3)
+obj.insert(2)
+obj.insert(1)
+obj.insert(0)
 
 obj.dump()
 
-print("Totoal Number of Nodes: ", obj.get_count())  #showing total count
+print("Totoal Number of Nodes before Deletion: ", obj.get_count())  #showing total count before deletion
+
 obj.find(10)              #finding item in nodes
 obj.find(-5)              #finding item in nodes
+obj.find(50)              #finding item in nodes
+obj.find(50-5)              #finding item in nodes
+
+obj.delete(0)   # This case will not gonna delete the 0th element in ll as the function is not able to get the 0th element ...this need to be optimised
+obj.delete(2)   # Skip the element which resides on the index-2
+obj.delete(6)   # Skip the element which resides on the index-6
+print("Totoal Number of Nodes after Deletion: ", obj.get_count())  #showing total count after deletion
+
+obj.dump()
