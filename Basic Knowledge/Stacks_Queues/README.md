@@ -4,6 +4,25 @@
 - Good standard insertion and deletion can be done with **O(1) time complexity.**
 - built in list type is used to implement stack in python, due to this fact list is the most flexible thing in python and not every push requires the resize of whole stack as its built upon a list that's why it takes O(1) time
 - If you are using .insert() method instead of .push() or .append(), you are no longer in the performance range of O(1). Also, it considers as violetting rules of stack in python
+- You can not add elements using .push() operation if you are using the by default list as a stack. You have to use the .append() method to add the element just like a list method. If you want to forcefully use the .push() function to add elements, you can refer the below given code with importing third party library.
+
+```
+from pythonds.basic import Stack
+
+s=Stack()
+
+print(s.isEmpty())
+s.push(4)
+s.push('dog')
+print(s.peek())
+s.push(True)
+print(s.size())
+print(s.isEmpty())
+s.push(8.4)
+print(s.pop())
+print(s.pop())
+print(s.size())
+```
 
 ## The functions associated with stack are:
 - empty() – Returns whether the stack is empty – **Time Complexity: O(1)**
