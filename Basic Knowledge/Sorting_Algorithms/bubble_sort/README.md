@@ -1,0 +1,2 @@
+# Explanation on Bubble sort
+- **First and foremost this algorithm just used as a teaching topic now a days because of it's unplesent time complexity which is O(n^2^). There are more optimised sorting alogorithms like merge sort and the most optimised algorithm like Quick sort which have already replaced bubble sort algorithm in sortig game**
