@@ -12,3 +12,4 @@
 * Right pointer <ins>shpould always be greater then pivot</ins> **(L[i] > pivot)**
 * If **(L[i] < pivot)** then it will triggered itself to swap with the left element which triggred itself in 2nd step explanation.  
 
+![qucksort](https://user-images.githubusercontent.com/54584388/220218043-98adc160-5b4b-451c-b485-76ff9e85382d.jpeg)
