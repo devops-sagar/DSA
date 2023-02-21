@@ -11,5 +11,6 @@
 3. If **(L[i] > pivot)** then it will triggered itself to swap with the right element which triggered itself in 5th step explanation to swap with this left element
 4. Right pointer <ins>shpould always be greater then pivot</ins> **(R[i] > pivot)**
 5. If **(R[i] < pivot)** then it will triggered itself to swap with the left element which triggred itself in 3rd step explanation.  
+6. This will lead pivot to its right place in array and devide the left array and right array. Now the same process will occure for both the arrays until there is only one element in array
 
 ![qucksort](https://user-images.githubusercontent.com/54584388/220218043-98adc160-5b4b-451c-b485-76ff9e85382d.jpeg)
