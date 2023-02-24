@@ -19,7 +19,7 @@ To be precise, binary search trees **provide an average Big-O complexity of O(lo
 
 ### Pros
 - When balanced, a BST provides lightning-fast O(log(n)) insertions, deletions, and lookups.  
-|---------------------------------------|
+
 | Operation | Average Case | Worst Case |
 |---------------------------------------|
 | Space | O(n) | O(n) |
@@ -31,7 +31,7 @@ To be precise, binary search trees **provide an average Big-O complexity of O(lo
 | Insertion | O(log n) | O(n) |
 |---------------------------------------|
 | Removal | O(log n) | O(n) |
-|---------------------------------------|
+
 
 ### Cons
 - Slow for a brute-force search. If you need to iterate over each node, you might have more success with an array.
