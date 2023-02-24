@@ -20,11 +20,13 @@ node.right.right = Node(1000)
 '''
 Line 9 to 18 will generate the following tree:
 
-                                            10(node)
+                                          (node)
+                                            10
                                            /  \   
-                               (node.left)5    15(node.right)
+                              (node.left) 5    15 (node.right)
                                          / \   / \
-                        (node.left.left)2   6 13  1000 (node.right.right)
+                       (node.left.left) 2   6 13  1000 (node.right.right)
+                                           /   \
                             (node.left.right)(node.right.left)
 
 '''
