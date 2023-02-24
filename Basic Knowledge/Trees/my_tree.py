@@ -6,6 +6,11 @@ class Node:
         self.left = left
         self.right = right
 
+class Tree:
+    def __init__(self, root, name=''):
+        self.root = root
+        self.name = name
+
 node = Node(10)
 
 node.left = Node(5)
@@ -31,4 +36,6 @@ Line 9 to 18 will generate the following tree:
 
 '''
 
-print(node.right.data)
+myTree = Tree(node, 'Sagar')        # Create a tree with root node and name of the tree (Meta-Data of a tree)   
+print(myTree.root.data)             # Now access the data with myTree.root object instead of node object
+print(myTree.root.right.right.data) # likewise access all other nodes in the tree
