@@ -5,11 +5,41 @@ class Node:
         self.data = data
         self.left = left
         self.right = right
+    
+    # def search(self, target):
+    #     if self.data == target:
+    #         return self
+    #     elif self.data > target:
+    #         if self.left is None:
+    #             return None
+    #         else:
+    #             return self.left.search(target)
+    #     else:
+    #         if self.right is None:
+    #             return None
+    #         else:
+    #             return self.right.search(target)
+            
+    def search(self, goal):
+        if self.data == goal:
+            print("Found", goal)
+            return self
+        elif self.left and self.data > goal:
+            print("Going left")
+            return self.left.search(goal)
+        elif self.right and self.data < goal:
+            print("Going right")
+            return self.right.search(goal)
+        else:
+            print("Element Not found in tree")
 
 class Tree:
     def __init__(self, root, name=''):
         self.root = root
         self.name = name
+    
+    def search(self, goal):
+        return self.root.search(goal)
 
 node = Node(10)
 
@@ -37,5 +67,12 @@ Line 9 to 18 will generate the following tree:
 '''
 
 myTree = Tree(node, 'Sagar')        # Create a tree with root node and name of the tree (Meta-Data of a tree)   
-print(myTree.root.data)             # Now access the data with myTree.root object instead of node object
-print(myTree.root.right.right.data) # likewise access all other nodes in the tree
+# print(myTree.root.data)             # Now access the data with myTree.root object instead of node object
+# print(myTree.root.right.right.data) # likewise access all other nodes in the tree
+
+try:
+    found = myTree.search(12)    # Search for an element in the tree
+    print(found.data)
+except AttributeError as e:
+    # print(e)
+    print("Element not found")
