@@ -21,16 +21,12 @@ To be precise, binary search trees **provide an average Big-O complexity of O(lo
 - When balanced, a BST provides lightning-fast O(log(n)) insertions, deletions, and lookups.  
 
 | Operation | Average Case | Worst Case |
-|---------------------------------------|
-| Space | O(n) | O(n) |
-|---------------------------------------|
-| Access | O(log n) | O(n) |
-|---------------------------------------|
-| Search | O(log n) | O(n) |
-|---------------------------------------|
-| Insertion | O(log n) | O(n) |
-|---------------------------------------|
-| Removal | O(log n) | O(n) |
+|:---------:|:------------:|:----------:|
+| Space     | O(n)         | O(n)       |
+| Access    | O(log n)     | O(n)       |
+| Search    | O(log n)     | O(n)       |
+| Insertion | O(log n)     | O(n)       |
+| Removal   | O(log n)     | O(n)       |
 
 
 ### Cons
