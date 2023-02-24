@@ -13,7 +13,9 @@ To be precise, binary search trees **provide an average Big-O complexity of O(lo
 
 - Each node can have only 2 children and all nodes contains numeric value in it
 - childredn to their left must have the lessaer value and right one must have the higher value than their parents
-- No deplicate values allowed, **all must be unique**
+- No deplicate values allowed, **all must be unique**  
+![bst](https://user-images.githubusercontent.com/54584388/221265887-cdebfcd8-cb5e-4c2c-a202-32b1ab76de31.gif)
+
 
 ### Pros
 - When balanced, a BST provides lightning-fast O(log(n)) insertions, deletions, and lookups.
