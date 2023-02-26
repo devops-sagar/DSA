@@ -48,3 +48,9 @@ Other common uses include:
 
 ### What’s the difference between a Binary Tree and a Linked List?
 While binary trees and linked lists both use pointers to keep track of nodes, binary trees are more efficient for searching. In fact, linked lists are **O(n)** when used to search for a specific element - that’s pretty bad! Linked lists excel at removing and inserting elements quickly in the middle of the list.
+
+## Traversing in a Tree
+1. In-Order Traversing
+2. Pre-Order Traversing
+3. Post-Order Traversing
+
