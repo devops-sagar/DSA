@@ -53,5 +53,8 @@ While binary trees and linked lists both use pointers to keep track of nodes, bi
 1. In-Order Traversing
 2. Pre-Order Traversing
 3. Post-Order Traversing  
-![Preorder-from-Inorder-and-Postorder-traversals](https://user-images.githubusercontent.com/54584388/221390675-6d5afbb9-2141-4080-9134-61937fcca501.jpg)
+![Preorder-from-Inorder-and-Postorder-traversals](https://user-images.githubusercontent.com/54584388/221390675-6d5afbb9-2141-4080-9134-61937fcca501.jpg)  
 
+**In order** => Left, Root, Right.  
+**Pre order** => Root, Left, Right.  
+**Post order** => Left, Right, Root.  

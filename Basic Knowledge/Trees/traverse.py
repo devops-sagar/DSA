@@ -16,6 +16,27 @@ class Node:
             return self.right.search(goal)
         else:
             print("Element Not found in tree")
+    
+    def pre_order(self):
+        print(self.data)
+        if self.left:
+            self.left.pre_order()
+        if self.right:
+            self.right.pre_order()
+
+    def in_order(self):
+        if self.left:
+            self.left.in_order()
+        print(self.data)
+        if self.right:
+            self.right.in_order()
+
+    def post_order(self):
+        if self.left:
+            self.left.post_order()
+        if self.right:
+            self.right.post_order()
+        print(self.data)
 
 class Tree:
     def __init__(self, root, name=''):
@@ -24,6 +45,15 @@ class Tree:
     
     def search(self, goal):
         return self.root.search(goal)
+    
+    def pre_order(self):
+        self.root.pre_order()
+
+    def in_order(self):
+        self.root.in_order()
+
+    def post_order(self):
+        self.root.post_order()
 
 node = Node(10)
 
@@ -60,3 +90,12 @@ try:
 except AttributeError as e:
     # print(e)
     print("Element not found")
+
+print("Pre Order:------------")
+myTree.pre_order()
+
+print("In Order:-------------")
+myTree.in_order()
+
+print("Post Order:-----------")
+myTree.post_order()
