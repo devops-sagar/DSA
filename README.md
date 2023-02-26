@@ -1,4 +1,4 @@
-# This repo is dedicated specially for the data structure and algorithm related questions
+# Python Data Structures & Algorithms 2023
 ## you can find all the problems related to the questions appearing on Leetcode, Hackerank, Codechef
 
 ## Follow this syntax to modify the Markdown files
