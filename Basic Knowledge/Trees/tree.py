@@ -1,4 +1,7 @@
 # Binary Search Tree
+'''
+NOTE: One should not insert Nodes like this in a tree. This is just for the initial representation of a tree and how tree looks like.
+'''
 
 class Node:
     def __init__(self, data, left=None, right=None):
