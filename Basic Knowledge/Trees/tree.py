@@ -1,4 +1,4 @@
-# Binary Search Tree
+# Binary Search Tree - just for visualization
 '''
 NOTE: One should not insert Nodes like this in a tree. This is just for the initial representation of a tree and how tree looks like.
 '''

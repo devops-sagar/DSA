@@ -13,6 +13,7 @@ class Node:
     def insert(self, data):
         
         print(self.data, data)                  # This line is for debuggiing purpose - Can tell you the cuurent values in process
+        
         if self.data:
             if data < self.data:
                 if self.left is None:
