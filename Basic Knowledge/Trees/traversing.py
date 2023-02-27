@@ -16,7 +16,7 @@ class Node:
 
     def insert(self, data):
         
-        print(self.data, data)                  # This line is for debuggiing purpose - Can tell you the cuurent values in process
+        print(self.data, data)                  # This line is for debugging purpose - Can tell you the cuurent values in process
         
         if self.data:
             if data < self.data:
@@ -31,14 +31,6 @@ class Node:
                     self.right.insert(data)
         else:
             self.data = data
-    
-    # def in_order_traverse(self, voot):
-    #     ans = []
-    #     if voot:
-    #         ans = self.in_order_traverse(voot.left)
-    #         ans.append(voot.data)
-    #         ans = ans + self.in_order_traverse(voot.right)
-    #     return ans
 
     def iot(self):                              # In Order Traversing
         if self.left:
