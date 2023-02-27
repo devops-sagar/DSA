@@ -14,7 +14,9 @@ To be precise, binary search trees **provide an average Big-O complexity of O(lo
 - Each node can have only 2 children and all nodes contains numeric value in it
 - childredn to their left must have the lessaer value and right one must have the higher value than their parents
 - No deplicate values allowed, **all must be unique**  
+<p align-item="center">
 ![bst](https://user-images.githubusercontent.com/54584388/221265887-cdebfcd8-cb5e-4c2c-a202-32b1ab76de31.gif)
+</p>
 
 
 ### Pros
@@ -58,3 +60,7 @@ While binary trees and linked lists both use pointers to keep track of nodes, bi
 **In order** => Left, Root, Right.  
 **Pre order** => Root, Left, Right.  
 **Post order** => Left, Right, Root.  
+
+![pew2](https://user-images.githubusercontent.com/54584388/221685439-02c7def3-b121-47a4-a30f-0f10cdd8039a.jpeg)
+![pew](https://user-images.githubusercontent.com/54584388/221685483-277f9761-34bd-4358-9edd-d159ec811891.jpeg)
+
