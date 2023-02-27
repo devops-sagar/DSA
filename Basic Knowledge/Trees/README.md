@@ -14,8 +14,8 @@ To be precise, binary search trees **provide an average Big-O complexity of O(lo
 - Each node can have only 2 children and all nodes contains numeric value in it
 - childredn to their left must have the lessaer value and right one must have the higher value than their parents
 - No deplicate values allowed, **all must be unique**  
-<p align-item="center">
-![bst](https://user-images.githubusercontent.com/54584388/221265887-cdebfcd8-cb5e-4c2c-a202-32b1ab76de31.gif)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54584388/221265887-cdebfcd8-cb5e-4c2c-a202-32b1ab76de31.gif" style="vertical-align:top; margin:4px">
 </p>
 
 
@@ -55,7 +55,10 @@ While binary trees and linked lists both use pointers to keep track of nodes, bi
 1. In-Order Traversing
 2. Pre-Order Traversing
 3. Post-Order Traversing  
-![Preorder-from-Inorder-and-Postorder-traversals](https://user-images.githubusercontent.com/54584388/221390675-6d5afbb9-2141-4080-9134-61937fcca501.jpg)  
+ 
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54584388/221390675-6d5afbb9-2141-4080-9134-61937fcca501.jpg" style="vertical-align:top; margin:4px">
+</p>
 
 **In order** => Left, Root, Right.  
 **Pre order** => Root, Left, Right.  
