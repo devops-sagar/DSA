@@ -33,21 +33,21 @@ class Node:
             self.data = data
 
     def iot(self):                              # In Order Traversing
-        if self.left:
+        if self.left:                           # Left -> Visit -> Right
             self.left.iot()
         print(self.data)
         if self.right:
             self.right.iot()
 
     def preot(self):                            # Pre Order Traversing
-        print(self.data)
+        print(self.data)                        # Visit -> Left -> Right
         if self.left:
             self.left.preot()
         if self.right:
             self.right.preot()
 
     def posot(self):                            # Post Order Traversing
-        if self.left:
+        if self.left:                           # Left -> Right -> Visit
             self.left.posot()
         if self.right:
             self.right.posot()
