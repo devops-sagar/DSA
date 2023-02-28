@@ -1,6 +1,6 @@
 # Explanations on Tress
 <p align="center">
-<video src="https://user-images.githubusercontent.com/54584388/221970151-b68f65f3-772a-4ba1-bb90-baf8fa71da76.mp4" controls="controls" style="max-width: 730px;">
+<video src="https://user-images.githubusercontent.com/54584388/221970151-b68f65f3-772a-4ba1-bb90-baf8fa71da76.mp4#t=38" controls="controls" style="max-width: 730px;">
 </video>
 </p>  
 
