@@ -1,4 +1,9 @@
 # Explanations on Tress
+<p align="center">
+<video src="https://user-images.githubusercontent.com/54584388/221970151-b68f65f3-772a-4ba1-bb90-baf8fa71da76.mp4" controls="controls" style="max-width: 730px;">
+</video>
+</p>  
+
 - One tree, One root node / One root node, One tree
 - node can have 0 or more children. 0 children node called as leaf
 - Each node links exactly to one parent. Any Node can not have 2 parents, otherwise it will generate the loops and **trees don't have loops**
