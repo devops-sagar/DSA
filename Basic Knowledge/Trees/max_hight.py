@@ -1,5 +1,6 @@
 '''
 - Simple representation of Insertion of Nodes in Binary Search Tree
+- getting the maximum height of a tree
 '''
 
 class Node:
@@ -27,7 +28,25 @@ class Node:
                     self.right.insert(data)
         else:
             self.data = data
+    
+    def height(self, h=0):
 
+        # if self.left:
+        #     left_height = self.left.height(h+1)
+        # else:
+        #     left_height = h
+
+        # if self.right:
+        #     right_height = self.right.height(h+1)
+        # else:
+        #     right_height = h
+
+        # return max(left_height, right_height)
+        
+        left_height = self.left.height(h+1) if self.left else h         # Same code as above but with 3 lines only
+        right_height = self.right.height(h+1) if self.right else h
+        return max(left_height, right_height)
+    
 root = Node(27)
 root.insert(14)
 root.insert(35)
@@ -35,3 +54,5 @@ root.insert(10)
 root.insert(19)
 root.insert(31)
 root.insert(42)
+
+print(root.height())
