@@ -1,6 +1,6 @@
 '''
 - Simple representation of Insertion of Nodes in Binary Search Tree
-- getting the maximum height of a tree
+- Getting the maximum height of a tree
 '''
 
 class Node:
