@@ -28,10 +28,17 @@ class Node:
         else:
             self.data = data
 
-root = Node(27)
-root.insert(14)
-root.insert(35)
-root.insert(10)
-root.insert(19)
-root.insert(31)
-root.insert(42)
+# root = Node(27)
+# root.insert(14)
+# root.insert(35)
+# root.insert(10)
+# root.insert(19)
+# root.insert(31)
+# root.insert(42)
+
+obj = None
+l = [7, 3, 12, 1, 5, 9, 15]                     # Also, can use list of items to iterate over instead of inserting multiple times
+root = Node(l[0])
+
+for value in l:
+    obj = root.insert(value)
