@@ -74,23 +74,30 @@ class Tree:
 
     def _nodeToChar(self, n, spacing):
         if n is None:
-            return '_'+(' '*spacing)
+            return 'x'+(' '*spacing)
         spacing = spacing-len(str(n))+1
         return str(n)+(' '*spacing)
 
-    def print(self, label=''):
-        print(self.name+'#'+label)
+    # def print(self, label=''):
+    def print(self):
+        # print(self.name+'#'+label)
+        print('')
+        print(f"self.root = {self.root.data}")
         height = self.root.height()
+        print(f"Height = {height}")
         spacing = 3
-        width = int((2**height-1) * (spacing+1) + 1)
+        width = int((((2**height)-1) * (spacing+1)) + 1)
+        print(f"Width = {width}")
         # Root offset
         offset = int((width-1)/2)
+        print(f"Offset = {offset}")
+        print('')
         for depth in range(0, height+1):
             if depth > 0:
                 # print directional lines
-                print('-'*(offset+1)  + ('^'*(spacing+2)).join(['/' + (' '*(spacing-2)) + '\\']*(2**(depth-1))))
+                print(' '*(offset+1)  + (' '*(spacing+2)).join(['/' + ('-'*(spacing-2)) + '\\']*(2**(depth-1))))
             row = self.root.getNodesAtDepth(depth, [])
-            print(('*'*offset)+''.join([self._nodeToChar(n, spacing) for n in row]))
+            print((' '*offset)+''.join([self._nodeToChar(n, spacing) for n in row]))
             spacing = offset+1
             offset = int(offset/2) - 1
         print('')
