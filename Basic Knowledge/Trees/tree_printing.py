@@ -16,7 +16,7 @@ def insert(root, value):
 def print_tree(root, level=0):
     if root is not None:
         print_tree(root.right, level + 1)
-        print('     ' * level, end='')
+        print('  -   ' * level, end='')
         print(root.value)
         print_tree(root.left, level + 1)
 
