@@ -80,8 +80,8 @@ class Node:
         print('')
 
 obj = None
-l = [7, 3, 12, 1, 5, 9, 15]                     # Also, can use list of items to iterate over instead of inserting multiple times
-# l = [7, 3, 12, 1, 5, 9, 15, 50, 25, 75, 13, 35, 55, 37, 103, 2, 20, 256]                     # Also, can use list of items to iterate over instead of inserting multiple times
+# l = [7, 3, 12, 1, 5, 9, 15]                     # Also, can use list of items to iterate over instead of inserting multiple times
+l = [7, 3, 12, 1, 5, 9, 15, 50, 25, 75, 13, 35, 55, 37, 103, 2, 20, 256]                     # Also, can use list of items to iterate over instead of inserting multiple times
 root = Node(l[0])
 
 for value in l:
