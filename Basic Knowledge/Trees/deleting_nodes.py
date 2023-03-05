@@ -110,7 +110,6 @@ class Node:
         return abs(left_height - right_height) < 2
 
 
-# obj = None
 l = [50, 25, 75, 67, 100, 80, 120, 92]                                   # Also, can use list of items to iterate over instead of inserting multiple times
 root = Node(l[0])
 
