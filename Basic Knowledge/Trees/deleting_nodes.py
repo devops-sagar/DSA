@@ -62,7 +62,7 @@ class Node:
         print('')
         print(f"self.root = {self.data}")
         height = self.height()
-        # print(f"Height = {height}")
+        print(f"Height = {height}")
         spacing = 3
         width = int((((2**height)-1) * (spacing+1)) + 1)
         print(f"Width = {width}")
@@ -103,6 +103,11 @@ class Node:
             self.left = self.left.delete(target)
         
         return self
+    
+    def isBalanced(self):
+        left_height = self.left.height() + 1 if self.left else 0
+        right_height = self.right.height() + 1 if self.right else 0
+        return abs(left_height - right_height) < 2
 
 
 # obj = None
@@ -119,5 +124,7 @@ if dnode in l:
     root.delete(dnode)
     print(f"Found the node {dnode}\nDeletion in progress...\nNode {dnode} Deleted!")
     root.print()
+    print(f"Tree balanced from {root.data}? {root.isBalanced()}")
+    print(f"Tree balanced from {root.left.data}? {root.left.isBalanced()}")     # Ignore the warnings and errors in this line as of now. However, the code is running as expected
 else:
     print(f"Node {dnode} you are trying to delete is not in the given tree")
