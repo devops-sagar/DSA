@@ -80,23 +80,32 @@ class Node:
             offset = int(offset/2) - 1
         print('')
     
-def rotate_right(rot):
+def rotate_right(rot):                                              # use <l_l_imbalanced> for testing purpose
     pivot = rot.left
     re_attach_node = pivot.right
     rot.left = re_attach_node
     pivot.right = rot
     return pivot
 
+def rotate_left(rot):                                               # use <r_r_imbalanced> for testing purpose
+    pivot = rot.right
+    re_attach_node = pivot.left
+    rot.right = re_attach_node
+    pivot.left = rot
+    return pivot
 
-# l = [50, 25, 75, 67, 100, 80, 120, 92]                         # Also, can use list of items to iterate over instead of inserting multiple times
-l_l_imbalanced = [30, 20, 31, 10, 21, 9, 11]                     # Left - Left imbalanced
-obj = Node(l_l_imbalanced[0])
 
-for value in l_l_imbalanced:
+# l = [50, 25, 75, 67, 100, 80, 120, 92]                            # Also, can use list of items to iterate over instead of inserting multiple times
+# l_l_imbalanced = [30, 20, 31, 10, 21, 9, 11]                      # Left - Left imbalanced
+r_r_imbalanced = [10, 9, 20, 19, 30, 29, 31]                        # Right - Right imbalanced
+obj = Node(r_r_imbalanced[0])
+
+for value in r_r_imbalanced:
     obj.insert(value)
 
 obj.print()
 
-obj = rotate_right(obj)
+# obj = rotate_right(obj)                                         # Rotate the tree on right
+obj = rotate_left(obj)                                         # Rotate the tree on left
 
 obj.print()                                                     # if there is an error - ignore becase code runs perfectly
