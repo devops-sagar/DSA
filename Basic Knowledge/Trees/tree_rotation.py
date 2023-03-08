@@ -98,6 +98,7 @@ def rotate_left(rot):                                               # use <r_r_i
 # l = [50, 25, 75, 67, 100, 80, 120, 92]                            # Also, can use list of items to iterate over instead of inserting multiple times
 # l_l_imbalanced = [30, 20, 31, 10, 21, 9, 11]                      # Left - Left imbalanced
 r_r_imbalanced = [10, 9, 20, 19, 30, 29, 31]                        # Right - Right imbalanced
+# l_r_imbalanced = [30, 10, 31, 9, 20, 19, 21]                        # Right - Right imbalanced
 obj = Node(r_r_imbalanced[0])
 
 for value in r_r_imbalanced:
@@ -105,7 +106,8 @@ for value in r_r_imbalanced:
 
 obj.print()
 
-# obj = rotate_right(obj)                                         # Rotate the tree on right
-obj = rotate_left(obj)                                         # Rotate the tree on left
+obj = rotate_right(obj)                                         # Rotate the tree on right
+# ob = rotate_left(obj.left)                                         # Rotate the tree on left
+# obb = rotate_right(obj)                                        # Rotate the tree on left
 
 obj.print()                                                     # if there is an error - ignore becase code runs perfectly
